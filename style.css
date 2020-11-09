@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }   
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+    /* background-size: contain; */
+    }
+    /* ------header------  */
+    .container{
+    width: 90%;
+    max-width: 600px;
+
+    margin: 25px auto;
+    box-sizing: border-box;
+    box-shadow: 10px 15px 40px 1px black;
+    background-color: white;
+    /* padding: auto; */
+    border-radius: 7px;
+    border: 8px solid transparent;
+    }
+    h1 {
+    /* width: 100%; */
+    font-family:cursive;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding: 7px 20px 7px 30px;
+    text-align: center;
+    /* color: rgb(98, 0, 255); */
+    }
+    .plans{
+    font-weight: bold;
+    font-size: 20px;
+    word-spacing: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 30px;
+    text-align: center;
+    color: rgb(175, 23, 155);
+
+    }
+    .search-list input{
+    width: 75%;
+    text-indent: 10px;
+    margin: 20px auto;
+    margin-left: 20px;
+    padding: 7px;
+    margin-bottom: 30px;
+    background: transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    /* outline: blue; */
+    /* padding-left: 10px; */
+    /* border: none; */
+    /* border-bottom: 2px solid black; */
+
+    }
+    button .fa{
+        float: center;  
+    }
+    .fa{
+        float: center;
+    }
+
+    input::placeholder{
+    text-indent: 10px;
+    font-weight: bold;
+    word-spacing: 2px;
+    color: black;
+    }
+    header{
+    /* background-image: url(o-YOUNG-BLACK-PERSON-OFFICE-facebook.jpg); */
+    background-size: cover;
+    background: rgb(212, 209, 209);
+    /*z-index: 0; */
+    /* margin: 0; */
+    }
+    header::after{
+        background:rgb(81, 52, 185);
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        
+
+    }
+    .search-list button{
+    width: 40px;
+    /* border-radius: 50%; */
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 120px;
+    padding: 8px;
+    margin-left: 5px;
+    color: #f36464;
+    outline: none;
+    position: relative;
+    right: 4px;
+    cursor: pointer;
+
+    }
+    .search-list button:active{
+    color: rgb(0, 183, 255);
+    transform: scale(1.2, 1.1);
+    /* background-color: coral; */
+    }
+    /* ----- MAIN BODY ---------  */
+
+    .todo-list, .add-list{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    .todo-list ul{
+    list-style-type: none;
+    }
+    h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: indianred;
+
+    }
+    .todo-list{
+    /* background-color: rgb(223, 223, 223); */
+    /* width: 90%; */
+    border: 1px solid transparent;
+    }
+    .todo-list li {
+    padding: 10px 20px;
+    /* border-left: 5px solid red; */
+    margin: 10px 10px;
+    margin-top: 20px;
+    /* background-color: saddlebrown; */
+    border-radius: 15px;
+    border: 1px solid transparent;
+    box-shadow: 1px 6px 10px 1px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+
+    }
+    .todo-list li:hover {
+        background-color: rgb(236, 12, 105);
+        transform: translateY(-5px);
+        transition: all ease-in 1s;
+    }
+    .todo-list li > input[type="checkbox"]{
+        color: seagreen;
+        /* visibility: hidden; */
+    }
+    .todo-list li > input[type="checkbox"] + .name{
+        color: rgb(22, 28, 109);
+        /* visibility: hidden; */ 
+        /* flex-basis: 90%; */
+        word-wrap: break-word;
+        margin-right: 30px;
+        /* text-align: center; */
+        /* background-color: rgb(12, 241, 4); */
+        flex-wrap: wrap;
+        margin-left: 10px;
+        flex: 2;
+    }
+    /* .todo-list li > input[type="checkbox"]:checked + .name {
+        /* text-decoration: line-through;   
+    }*/
+
+    .complete {
+        text-decoration: line-through;   
+    }
+    
+    .todo-list li > input[type="checkbox"] + .name:hover{
+        color: yellow;
+    }
+    .todo-list li > input[type="checkbox"] {
+        /* display: none; */
+        /* visibility: hidden;  */
+        cursor: pointer;
+    }
+    .todo-list li > input[type="checkbox"]:checked + .name + .icons > .fa {
+        /* color: red; */
+        display: inline-block;
+        /* visibility: visible; */
+    }
+    /* .todo-list li > input[type="checkbox"]:checked + .name + .icons >.fa::before{
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background-image: url('https://tjgillweb.github.io/Vacation-Todo-App/images/tick.svg');
+    } */
+    .todo-list li > .icons > .fa {
+        /* display: none; */
+        color: coral;
+        float: right;
+        /* display: grid; */
+        align-items: center;
+        justify-content: center;
+        /* flex: 3; */
+    }
+    .todo-list li > .icons > .fa:active{
+        color: greenyellow;
+    }
+
+    /* ------------------- FOOTER ------------ */
+    .add-list input{
+    width: 75%;
+    /* overflow: scroll; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 30px;
+    text-indent: 10px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    outline: none;
+    }
+    .add-list input:focus{
+        border: 2px solid tomato;
+    }
+    .add-list .btn-1{
+        color: purple;
+        padding: 8px;
+        position: relative;
+        right: 15px; 
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        outline: none;
+        cursor: pointer;
+          
+    }
+    .add-list .btn-1:focus{
+        border: 2px solid orange;
+    }
+    .add-list .btn-1:active{
+        color:rgb(255, 30, 0);
+        background: rgb(214, 213, 213);
+        transform: scale(1.2, 1.1);
+    }
